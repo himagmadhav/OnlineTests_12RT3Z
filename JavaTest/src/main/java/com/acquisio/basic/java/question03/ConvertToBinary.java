@@ -18,6 +18,17 @@ public class ConvertToBinary {
     }
 
     private String convertToBinary(int val) {
-        return null; // TODO: Insert your code here.
+        int binaryArray[]= new int[1000];
+        int i=0;
+        String str="";
+        while(val>0){
+            binaryArray[i]=val%2;
+            val=val/2;
+            i++;
+        }
+        for(int j=i-1;j>=0;j--){
+            str=str+Integer.toString(binaryArray[j]);
+        }
+        return  str; // TODO: Insert your code here.
     }
 }
