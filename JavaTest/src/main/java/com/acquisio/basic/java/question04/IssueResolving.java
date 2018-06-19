@@ -16,7 +16,11 @@ public class IssueResolving {
     private int factorial(int n) {
         // TODO: Fix code here.
         int result = 0;
+        if(n==0){
+            return 1;
+        }else{
         result = factorial(n - 1) * n;
+        }
         return result;
     }
 
