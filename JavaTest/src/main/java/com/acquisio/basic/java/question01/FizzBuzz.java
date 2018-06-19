@@ -22,5 +22,16 @@ public class FizzBuzz {
 
     private void fizzBuzz(int maxValue) {
         // TODO: Insert your code here
+        if(maxValue%3==0){
+            if(maxValue%5==0){
+                System.out.println("FizzBuzz");
+            }else {
+                System.out.println("Fizz");
+            }
+         }else if(maxValue%5==0){
+                System.out.println("Buzz");
+         }else{
+                System.out.println(maxValue);
+          }
     }
 }
